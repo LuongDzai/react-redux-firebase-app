@@ -18,3 +18,4 @@ firebase.initializeApp(config);
 firebase.firestore().settings({ timestampsInSnapshots: true });
 
 export default firebase;
+// ko co gi o bai 16
