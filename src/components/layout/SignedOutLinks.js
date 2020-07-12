@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-export default function Navbar() {
+export default function SignOutLinks() {
   return (
     <div>
       <ul className="right">
