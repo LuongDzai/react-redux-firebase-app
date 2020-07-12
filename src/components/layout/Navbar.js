@@ -2,8 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import SignedInLinks from "./SignedInLinks";
 import SignedOutLinks from "./SignedOutLinks";
+import { connect } from "react-redux";
 
-export default function Navbar() {
+function Navbar() {
   return (
     <div>
       <nav className="nav-wrapper grey darken-3">
@@ -18,3 +19,12 @@ export default function Navbar() {
     </div>
   );
 }
+
+const mapStateToProps = (state) => {
+  console.log(state)
+  return {
+
+  }
+}
+
+export default connect(mapStateToProps)(Navbar)
