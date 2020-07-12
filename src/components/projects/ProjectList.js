@@ -5,7 +5,7 @@ function ProjectList({projects}) {
   return (
     <div>
       <div className="project-list section">
-        {projects.map((project)=>{
+        {projects && projects.map((project)=>{
           return(
             <ProjectSummary project={project} key={project.id}/>
           )
