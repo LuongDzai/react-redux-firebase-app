@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Profiler } from "react";
 import { NavLink } from "react-router-dom";
 import { connect } from "react-redux";
 import { signOut } from "../../store/actions/authActions";
@@ -15,7 +15,7 @@ function SignInLinks(props) {
         </li>
         <li>
           <NavLink to="/" className="btn btn-floating pink lighten-1">
-            XL
+            {props.profile.initials}
           </NavLink>
         </li>
       </ul>
