@@ -53,3 +53,4 @@ export default compose(
     },
   ])
 )(ProjectDetails);
+// thay doi o rule firebase
